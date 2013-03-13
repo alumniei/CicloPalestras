@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,800,300);
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 800;
+	color: white;
+}
+
+h1 {
+	@include adjust-font-size-to(36px);
+	margin: 0 0 rhythm(3, 36px) 0;
+	color: white;
+}
+
+h2 {
+	@include adjust-font-size-to(32px);
+	margin: rhythm(4, 32px) 0 rhythm(2, 32px) 0;
+}
+
+p, pre, label {
+	@include adjust-font-size-to(18px);
+	margin: 0 0 rhythm(2,18px) 0;
+}
+
+body { font-family: 'Open Sans', sans-serif; font-weight: 300; color: #333; }
