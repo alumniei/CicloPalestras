@@ -2,31 +2,12 @@
 - @bodyclass = "newproject"
 
 .intro
-  %h2{style: "margin-top: 300px"}
+  %h2
     Oportunidades para um Engenheiro Informático
-  %p 
+  %p
     AlumniEI-FEUP apresenta o seu ciclo de palestras para 2012. Este ciclo (de quatro palestras, ao todo) é dedicado ao tema das oportunidades atuais para um engenheiro informático, seja a nível nacional ou a nível internacional, agora que os finalistas do curso de Engenharia Informática da FEUP se preparam para entrar no mercado de trabalho.
   %p 
     Queremos com esta palestra (livre de qualquer encargo para toda a audiência) ajudar a promover o empreendedorismo, a iniciativa, bem como a profissão de Engenheiro Informático em Portugal através da experiência das pessoas e empresas que vemos como exemplos no “saber fazer”.
-
-  %h2{style: "margin-top: 300px"}
-    Parceiros
-  %p 
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-    =img_holder(:width => 200, :height => 100, :bgcolor => "#fff", :fgcolor => "#cc3333", :text => "FEUP")
-
-
-    
 
 .events
   %h2 Palestras
@@ -95,7 +76,27 @@
     %br
     %a{href: '#', class: "button"}Programação e Inscrições
     %br
-    
+
+%h2 Programa
+= partial "schedule", locals: {days: [{date:"17 Abril", file: "day1"}, {date:"24 Abril", file: "day2"}]}
+= partial "schedule", locals: {days: [{date:"22 Maio", file: "day3"}, {date:"29 Maio", file: "day4"}]}
+//= partial "schedule", locals: {days: [{date:"5 Junho", file: "day5"}]}
+
+
+%h2 Parceiros
+%p 
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#009ebc", :text => "FEUP")
 
 .moreinfo
   %h2

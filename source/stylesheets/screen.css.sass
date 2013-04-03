@@ -34,26 +34,55 @@
 //   margin-top: 3em
 //   text-align: right
 
+@mixin display-box
+  display:-moz-box
+  -moz-box-pack:center
+  -moz-box-align:center
+  display:-webkit-box
+  -webkit-box-pack:center
+  -webkit-box-align:center
+  display:box
+  box-pack:center
+  box-align:center
+
+
+.container
+  // Force images to scale down to their container widths.
+  img
+    max-width: 100%
+    height: auto
+
+
+// H5BP helper classes & mixins.
+// @include h5bp-helpers
+
+// Print styles.
+@include h5bp-media
+
 $padd: 25px
-$c1: #e74c3c
-$c2: #c0392b
+//$c1: #e74c3c
+$c1: #009ebc
+//$c2: #c0392b
+$c2: darken($c1, 10%)
 $c3: #efcece
 
 header
   background: white
   padding: 100px
+
 body
   background: $c1
+
 h1
-  background: url("/images/logo-color2.png") no-repeat
-  width: 494px
-  height: 147px
+  background: url("../images/logo-color2.png") no-repeat
+  width: 500px
+  height: 149px
   @include hide-text
 
 
 .events
   overflow: hidden
-  margin: 300px auto
+  margin: 30px auto
   .event
     @include span-columns(5.83, 12)
     @include background(rgba(white, 0.8))
@@ -92,20 +121,91 @@ h1
   height: 10px
   font-weight: 800
 
+.schedule
+  overflow: hidden
+  margin-bottom: 70px
+  header
+    width: 100%
+    background: white
+    padding: 15px
+    h2
+      color: $c1
+  aside, .tracks
+    float: left
+  $halfHourH: 110px
+  $halfHourP: 15px
+  $halfHourTotal: $halfHourH + 2 * $halfHourP - 10px
+  .day-header
+    margin-left: 10%
+    .day
+      width: 50%
+      float: left
+      border-left: 3px solid $c1
+      border-top: 3px solid $c1
+      text-align: center
+      padding: 10px 0
+      @include background(rgba(white, 0.8))
+      .day-title
+        color: $c2
+        font-size: 22px
+        text-transform: uppercase
+        letter-spaceing: 2px
+        font-weight: 800
+  aside
+    clear: both
+    width: 10%
+    @include background(rgba(white, 0.8))
+    text-align: center
+    .time
+      width: 100%
+      height: $halfHourH
+      float: left
+      padding: $halfHourP
+      font-size: 14px
+      color: $c2
+      text-transform: uppercase
+      letter-spacing: 2px
+      font-weight: 800
+  .tracks
+    width: 90%
+    .day
+      width: 50%
+      float: left
+      margin-left: 0
+      margin-right: 0
+      .first
+        margin-top: -3px
+      .track
+        @include display-box
+        width: 100%
+        border-left: 3px solid $c1
+        border-top: 3px solid $c1
+        background: white
+        text-align: center
+        h2
+          color: $c1
+          font-size: 14px
+        p
+          font-size: 12px
 
-
-.container
-  // Force images to scale down to their container widths.
-  img
-    max-width: 100%
-    height: auto
-
-
-// H5BP helper classes & mixins.
-// @include h5bp-helpers
-
-// Print styles.
-@include h5bp-media
-
+  $extraStruff: 16px
+  .min15
+    height: ($halfHourTotal / 2) - $extraStruff
+    //background: green
+  .min20
+    height: (2 * $halfHourTotal / 3) - $extraStruff
+    //background: blue
+  .min25
+    height: (5 * $halfHourTotal / 6) - $extraStruff
+    //background: grey
+  .min30
+    height: $halfHourTotal - $extraStruff
+    //background: yellow
+  .min60
+    height: 2* $halfHourTotal - $extraStruff - 1px
+    //background: yellow  
+  .min120
+    height: 4 * $halfHourTotal - $extraStruff - 9px
+    //background: pink
 
 

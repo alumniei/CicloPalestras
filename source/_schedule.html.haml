@@ -1,0 +1,20 @@
+.schedule
+  /%header
+  /#%h2 Programação
+  .day-header
+    - days.each do |d|
+      .day
+        %span.day-title= d[:date]
+  %aside
+    %span.time 14h30
+    %span.time 15h00
+    %span.time 15h30
+    %span.time 16h00
+    %span.time 16h30
+    %span.time 17h00
+    %span.time 17h30
+    %span.time 18h00
+    %span.time 20h00
+  .tracks
+    - days.each do |d|
+      = partial d[:file]
