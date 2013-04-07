@@ -27,7 +27,7 @@
         You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.
     %header
       .container
-        %h1= @title    
+        %h1= @title
     .container
       #main-content{:role => "main"}
 
@@ -35,7 +35,13 @@
         = yield
 
       %footer
-        %p &copy; #{copyright_years(2013)} AlumnniEI
+        .leftside
+          %p &copy; #{copyright_years(2013)} AlumnniEI
+        .rightside
+          %a(href='https://twitter.com/AlumniEIFEUP' class="social twitter")
+          %a(href='https://www.facebook.com/AlumniEI' class="social facebook")
+
+        
 
     = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"
     :javascript

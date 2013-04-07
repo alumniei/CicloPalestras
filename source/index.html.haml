@@ -12,89 +12,74 @@
 .events
   %h2 Palestras
   .event
-    / %div.date
-    /   %span.day 12
-    /   %br
-    /   %span.month Abril
-    %img{src: "images/pacman.png"}
+    %img(src="images/pacman.png")
     %h3 Sistemas de Informação e Multimédia
-    %p 
-      Retail Consult, Novabase Consult, Optimizer,
-      %br Abyssal, 3Decide e Grupo @Work
+    //%p 
+    //  Retail Consult, Novabase Consult, Optimizer,
+    //  %br Abyssal, 3Decide e Grupo @Work
     %br
-    %a{href: '#', class: "button"}Informações Brevemente
+    %a(href='#day1' class="button")Programação
     %br
   .event
-    / %div.date
-    /   %span.day 12
-    /   %br
-    /   %span.month Abril
-    %img{src: "images/pacman-color.png"}
+    %img(src="images/pacman-color.png")
     %h3 Consultadoria, Investigação e Qualidade
-    %p 
-      Deloitte, Accenture,Randstad Tech,
-      %br MindSource e Fraunhofer
+    //%p 
+    //  Deloitte, Accenture,Randstad Tech,
+    //  %br MindSource e Fraunhofer
     %br
-    %a{href: '#', class: "button"}Informações Brevemente
+    %a(href='#day2' class="button")Programação
     %br
   .event
-    / %div.date
-    /   %span.day 12
-    /   %br
-    /   %span.month Abril
-    %img{src: "images/pacman-color.png"}
+    %img(src="images/pacman-color.png")
     %h3 Carreira em Web e Mobile
-    %p 
-      Blip, Rocket Internet,
-      %br Much Beta, Wit e AdClick
+    //%p 
+    //  Blip, Rocket Internet,
+    //  %br Much Beta, Wit e AdClick
     %br
-    %a{href: '#', class: "button"}Informações Brevemente
+    %a(href='#day3' class="button")Programação
     %br
   .event
-    / %div.date
-    /   %span.day 12
-    /   %br
-    /   %span.month Abril
-    %img{src: "images/pacman.png"}
+    %img(src="images/pacman.png")
     %h3 Carreira em Software Houses
-    %p 
-      PT Inovação, Kentra,
-      %br Shortcut e IT Grow
+    //%p 
+    //  PT Inovação, Kentra,
+    //  %br Shortcut e IT Grow
     %br
-    %a{href: '#', class: "button"}Informações Brevemente
+    %a(href='#day4' class="button")Programação
     %br
   
 
 %h2 Programa
-= partial "schedule", locals: {days: [{date:"17 Abril", file: "day1"}, {date:"24 Abril", file: "day2"}]}
-= partial "schedule", locals: {days: [{date:"22 Maio", file: "day3"}, {date:"29 Maio", file: "day4"}]}
+= partial "schedule"
+//= partial "schedule", locals: {days: [{date: "22 Maio", file: "day3"}, {date: "29 Maio", file: "day4"}]}
 //= partial "schedule", locals: {days: [{date:"5 Junho", file: "day5"}]}
 
 
 %h2 Parceiros
-%p 
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Retail Consult")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Novabase Consult")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Optimizer")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Abyssal")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "3Decide")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Grupo @Work")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Deloitte")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Accenture")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Randstad Tech")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MindSource")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Fraunhofer")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Blip")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Rocket Internet")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Much Beta")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wit")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "AdClick")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "PT Inovação")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Kentra")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Shortcut")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "IT Grow")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "UNEP-WCMC")
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wooga")
+%p
+  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MIEIC") 
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Retail Consult")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Novabase Consult")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Optimizer")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Abyssal")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "3Decide")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Grupo @Work")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Deloitte")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Accenture")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Randstad Tech")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MindSource")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Fraunhofer")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Blip")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Rocket Internet")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Much Beta")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wit")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "AdClick")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "PT Inovação")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Kentra")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Shortcut")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "IT Grow")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "UNEP-WCMC")
+  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wooga")
 
 
 .moreinfo
