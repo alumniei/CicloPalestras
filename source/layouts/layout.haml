@@ -28,12 +28,13 @@
     %header
       .container
         %h1= @title
+    
+    #main-content{:role => "main"}
+
+      -# Page content gets rendered here
+      = yield
+
     .container
-      #main-content{:role => "main"}
-
-        -# Page content gets rendered here
-        = yield
-
       %footer
         .leftside
           %p &copy; #{copyright_years(2013)} AlumniEI-FEUP
@@ -48,6 +49,7 @@
       window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.9.0.min.js"><\/script>')
 
     -# Holder.js - canvas-generated placeholder images for prototyping
+    = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyDE0gstCSUWkPFNQvKEaLXi7E_7wIjTGoo&sensor=false"
     = javascript_include_tag "libs/holder"
 
     = javascript_include_tag "plugins", "script"

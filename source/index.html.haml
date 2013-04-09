@@ -1,98 +1,107 @@
 - @title = "Ciclo de Palestras"
 - @bodyclass = "newproject"
 
-.intro
-  %h2
-    Oportunidades para um Engenheiro Informático
-  %p
-    A AlumniEI-FEUP apresenta o seu ciclo de palestras para 2013. Este ciclo (de cinco palestras, ao todo) é dedicado ao tema das oportunidades atuais para um engenheiro informático, seja a nível nacional ou a nível internacional, agora que os finalistas do curso de Engenharia Informática da FEUP se preparam para entrar no mercado de trabalho.
-  %p 
-    Queremos com esta palestra (livre de qualquer encargo para toda a audiência) ajudar a promover o empreendedorismo, a iniciativa, bem como a profissão de Engenheiro Informático em Portugal através da experiência das pessoas e empresas que vemos como exemplos no “saber fazer”.
+.container
+  .intro
+    %h2
+      Oportunidades para um Engenheiro Informático
+    %p
+      A AlumniEI-FEUP apresenta o seu ciclo de palestras para 2013. Este ciclo (de cinco palestras, ao todo) é dedicado ao tema das oportunidades atuais para um engenheiro informático, seja a nível nacional ou a nível internacional, agora que os finalistas do curso de Engenharia Informática da FEUP se preparam para entrar no mercado de trabalho.
+    %p 
+      Queremos com esta palestra (livre de qualquer encargo para toda a audiência) ajudar a promover o empreendedorismo, a iniciativa, bem como a profissão de Engenheiro Informático em Portugal através da experiência das pessoas e empresas que vemos como exemplos no “saber fazer”.
 
-.events
-  %h2 Palestras
-  .event
-    %img(src="images/pacman.png")
-    %h3 Sistemas de Informação e Multimédia
-    //%p 
-    //  Retail Consult, Novabase Consult, Optimizer,
-    //  %br Abyssal, 3Decide e Grupo @Work
-    %br
-    %a(href='#day1' class="button")Programa
-    %br
-  .event
-    %img(src="images/pacman-color.png")
-    %h3 Consultadoria, Investigação e Qualidade
-    //%p 
-    //  Deloitte, Accenture,Randstad Tech,
-    //  %br MindSource e Fraunhofer
-    %br
-    %a(href='#day2' class="button")Programa
-    %br
-  .event
-    %img(src="images/pacman-color.png")
-    %h3 Carreira em Web e Mobile
-    //%p 
-    //  Blip, Rocket Internet,
-    //  %br Much Beta, Wit e AdClick
-    %br
-    %a(href='#day3' class="button")Programa
-    %br
-  .event
-    %img(src="images/pacman.png")
-    %h3 Carreira em Software Houses
-    //%p 
-    //  PT Inovação, Kentra,
-    //  %br Shortcut e IT Grow
-    %br
-    %a(href='#day4' class="button")Programa
-    %br
-  .event
-    %img(src="images/pacman.png")
-    %h3 Carreira Internacional
-    %br
-    %p Agenda a anunciar
-    / %a(href='#day5' class="button")Programa
-    %br
+  .events
+    %h2 Palestras
+    .event
+      %img(src="images/pacman.png")
+      %h3 Sistemas de Informação e Multimédia
+      //%p 
+      //  Retail Consult, Novabase Consult, Optimizer,
+      //  %br Abyssal, 3Decide e Grupo @Work
+      %br
+      %a(href='#day1' class="button")Programa
+      %br
+    .event
+      %img(src="images/pacman-color.png")
+      %h3 Consultadoria, Investigação e Qualidade
+      //%p 
+      //  Deloitte, Accenture,Randstad Tech,
+      //  %br MindSource e Fraunhofer
+      %br
+      %a(href='#day2' class="button")Programa
+      %br
+    .event
+      %img(src="images/pacman-color.png")
+      %h3 Carreira em Web e Mobile
+      //%p 
+      //  Blip, Rocket Internet,
+      //  %br Much Beta, Wit e AdClick
+      %br
+      %a(href='#day3' class="button")Programa
+      %br
+    .event
+      %img(src="images/pacman.png")
+      %h3 Carreira em Software Houses
+      //%p 
+      //  PT Inovação, Kentra,
+      //  %br Shortcut e IT Grow
+      %br
+      %a(href='#day4' class="button")Programa
+      %br
+    .event
+      %img(src="images/pacman.png")
+      %h3 Carreira Internacional
+      %br
+      %p Agenda a anunciar
+      / %a(href='#day5' class="button")Programa
+      %br
+    
+
+  %h2 Programa
+  = partial "schedule"
+  //= partial "schedule", locals: {days: [{date: "22 Maio", file: "day3"}, {date: "29 Maio", file: "day4"}]}
+  //= partial "schedule", locals: {days: [{date:"5 Junho", file: "day5"}]}
+
+
+  %h2 Parceiros
+  %p
+    =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MIEIC") 
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Retail Consult")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Novabase Consult")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Optimizer")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Abyssal")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "3Decide")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Grupo @Work")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Deloitte")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Accenture")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Randstad Tech")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MindSource")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Fraunhofer")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Blip")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Rocket Internet")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Much Beta")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wit")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "AdClick")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "PT Inovação")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Kentra")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Shortcut")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "IT Grow")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "UNEP-WCMC")
+    / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wooga")
+
+.location
+  .container
+    %h2 Local
+    %p Praperi puppi
+
+  #map-canvas
   
 
-%h2 Programa
-= partial "schedule"
-//= partial "schedule", locals: {days: [{date: "22 Maio", file: "day3"}, {date: "29 Maio", file: "day4"}]}
-//= partial "schedule", locals: {days: [{date:"5 Junho", file: "day5"}]}
-
-
-%h2 Parceiros
-%p
-  =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MIEIC") 
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Retail Consult")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Novabase Consult")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Optimizer")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Abyssal")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "3Decide")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Grupo @Work")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Deloitte")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Accenture")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Randstad Tech")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "MindSource")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Fraunhofer")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Blip")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Rocket Internet")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Much Beta")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wit")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "AdClick")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "PT Inovação")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Kentra")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Shortcut")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "IT Grow")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "UNEP-WCMC")
-  / =img_holder(:width => 207, :height => 100, :bgcolor => "#fff", :fgcolor => "#3498DB", :text => "Wooga")
-
-
-.moreinfo
-  %h2
-    Mais informações
-  %p 
-    Em todas as palestras haverá tempo para networking e espaço para entrevistas com as empresas. Traz o teu CV e não percas a primeira grande oportunidade da tua carreira!
+.container
+  .moreinfo
+    %h2
+      Mais informações
+    %p 
+      Em todas as palestras haverá tempo para networking e espaço para entrevistas com as empresas. Traz o teu CV e não percas a primeira grande oportunidade da tua carreira!
 
 
