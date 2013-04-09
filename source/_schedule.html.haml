@@ -3,9 +3,9 @@
     .day
       %a(id="day1")
       %span.day-title='17 Abril'
-    .day
-      %a(id="day2")
-      %span.day-title='24 Abril'
+    / .day
+    /   %a(id="day2")
+    /   %span.day-title='24 Abril'
   %aside
     %span.time 14h30
     %span.time 15h00
@@ -18,28 +18,28 @@
     %span.time 20h00
   .tracks
     = partial "day1"
-    = partial "day2"
-.schedule
-  .day-header
-    .day
-      %a(id="day3")
-      %span.day-title='22 Maio'
-    .day
-      %a(id="day4")
-      %span.day-title='29 Maio'
-  %aside
-    %span.time 14h30
-    %span.time 15h00
-    %span.time 15h30
-    %span.time 16h00
-    %span.time 16h30
-    %span.time 17h00
-    %span.time 17h30
-    %span.time 18h00
-    %span.time 20h00
-  .tracks
-    = partial "day3"
-    = partial "day4"
+    / = partial "day2"
+/ .schedule
+/   .day-header
+/     .day
+/       %a(id="day3")
+/       %span.day-title='22 Maio'
+/     .day
+/       %a(id="day4")
+/       %span.day-title='29 Maio'
+/   %aside
+/     %span.time 14h30
+/     %span.time 15h00
+/     %span.time 15h30
+/     %span.time 16h00
+/     %span.time 16h30
+/     %span.time 17h00
+/     %span.time 17h30
+/     %span.time 18h00
+/     %span.time 20h00
+/   .tracks
+/     = partial "day3"
+/     = partial "day4"
 / .schedule
 /   .day-header
 /     .day
