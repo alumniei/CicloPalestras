@@ -5,6 +5,7 @@ $(function() {
 	function initialize() {
 
 		var I105 = new google.maps.LatLng(41.17802410615967, -8.59554648399353);
+		var BIBL = new google.maps.LatLng(41.177434610537155, -8.594902753829956);
 		var mapOptions = {
 			center: I105,
 			zoom: 17,
@@ -36,12 +37,21 @@ $(function() {
 
 		map.setOptions({styles: styles});
 
-		marker = new google.maps.Marker({
+		new google.maps.Marker({
 			map:map,
 			draggable:false,
 			animation: google.maps.Animation.DROP,
 			position: I105
 		});
+
+		new google.maps.Marker({
+			map:map,
+			draggable:false,
+			animation: google.maps.Animation.DROP,
+			position: BIBL
+		});
+
+		
 
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
