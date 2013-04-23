@@ -9,7 +9,8 @@ $(function() {
 		var mapOptions = {
 			center: I105,
 			zoom: 17,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false
 		};
 		var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
 
