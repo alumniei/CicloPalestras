@@ -167,7 +167,7 @@ h1
     float: left
   $halfHourH: 110px
   $halfHourP: 15px
-  $halfHourTotal: $halfHourH + 2 * $halfHourP - 10px
+  $halfHourTotal: $halfHourH + 0.925*$halfHourP - 10px
   .day-header
     margin-left: 10%
     .day
@@ -223,22 +223,16 @@ h1
 
   $extraStruff: 16px
   .min15
-    height: ($halfHourTotal / 2) - $extraStruff
+    height: $halfHourTotal - $extraStruff
     //background: green
-  .min20
-    height: (2 * $halfHourTotal / 3) - $extraStruff
-    //background: blue
-  .min25
-    height: (5 * $halfHourTotal / 6) - $extraStruff
     //background: grey
   .min30
-    height: $halfHourTotal - $extraStruff
+    height: ($halfHourTotal * 2) - $extraStruff
     //background: yellow
+  .min45
+    height: ($halfHourTotal * 3) - $extraStruff
   .min60
-    height: 2* $halfHourTotal - $extraStruff - 1px
+    height: 4* $halfHourTotal - $extraStruff - 1px
     //background: yellow  
-  .min120
-    height: 4 * $halfHourTotal - $extraStruff - 9px
-    //background: pink
 
 
