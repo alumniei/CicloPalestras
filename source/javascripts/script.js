@@ -17,7 +17,7 @@ $(function() {
 		var styles = [
   		{
     		stylers: [
-      		{ hue: "#3498DB" },
+      		{ hue: "#8C2D19" },
       		{ saturation: -20 }
     		]			
   		},{

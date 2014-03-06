@@ -88,7 +88,7 @@ footer
 $padd: 25px
 //$c1: #e74c3c
 //$c1: #009ebc
-$c1: #3498DB
+$c1: #8C2D19
 
 //$c2: #c0392b
 $c2: darken($c1, 10%)
@@ -104,6 +104,7 @@ body
 h1
   float: left
   background: url("../images/logo-color2.png") no-repeat
+  background-size: 90%
   width: 500px
   height: 249px
   @include hide-text
@@ -152,6 +153,7 @@ h1
   font-weight: 800
   &:hover
     @include background($c1)
+    color: white
 
 
 .schedule
@@ -171,7 +173,7 @@ h1
   .day-header
     margin-left: 10%
     .day
-      width: 50%
+      width: 30%
       float: left
       border-left: 3px solid $c1
       border-top: 3px solid $c1
@@ -202,7 +204,7 @@ h1
   .tracks
     width: 90%
     .day
-      width: 50%
+      width: 30%
       float: left
       margin-left: 0
       margin-right: 0
